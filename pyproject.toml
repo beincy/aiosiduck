@@ -5,7 +5,9 @@ description = "simple siduck for quic"
 authors = [
     {name = "sothis", email = "382035562@qq.com"},
 ]
-dependencies = []
+dependencies = [
+    "aioquic>=0.9.25",
+]
 requires-python = ">=3.8"
 readme = "README.md"
 license = {text = "MIT"}
