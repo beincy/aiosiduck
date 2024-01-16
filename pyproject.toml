@@ -1,6 +1,6 @@
 [project]
 name = "aiosiduck"
-version = "0.1.0"
+version = "0.1.2"
 description = "simple siduck for quic"
 authors = [
     {name = "sothis", email = "382035562@qq.com"},
@@ -11,6 +11,8 @@ dependencies = [
 requires-python = ">=3.8"
 readme = "README.md"
 license = {text = "MIT"}
+url = "https://github.com/beincy/aiosiduck"
+install_requires = ['aioquic>=0.9.25']
 
 [build-system]
 requires = ["pdm-backend"]
