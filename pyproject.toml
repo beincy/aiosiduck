@@ -1,23 +1,30 @@
 [project]
-name = "aiosiduck"
-version = "0.1.2"
-description = "simple siduck for quic"
+name = "siduckclient"
+version = "0.1.0"
+description = "Add your description here"
 authors = [
-    {name = "sothis", email = "382035562@qq.com"},
+    { name = "BIANHUIWORK\\bianhui", email = "bianhui0524@sina.com" }
 ]
 dependencies = [
     "aioquic>=0.9.25",
+    "aiosiduck>=0.1.2",
 ]
-requires-python = ">=3.8"
 readme = "README.md"
-license = {text = "MIT"}
-url = "https://github.com/beincy/aiosiduck"
-install_requires = ['aioquic>=0.9.25']
+requires-python = ">= 3.8"
+
+[project.scripts]
+hello = "siduckclient:hello"
 
 [build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
+[tool.rye]
+managed = true
+dev-dependencies = []
 
-[tool.pdm]
-package-type = "library"
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/siduckclient"]
